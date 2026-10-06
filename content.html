@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Contact Us</h1>
+        <p>Please fill out the form below and we will get back to you shortly.</p>
+    </header>
+
+    <form action="#" method="POST">
+
+        <div>
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Jane Doe" required>
+        </div>
+
+        <div>
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+        </div>
+
+        <div>
+            <label for="phone">Phone / Extension *</label>
+            <input type="number" id="phone" name="phone" placeholder="1234567890" required>
+        </div>
+
+        <div>
+            <label for="preferredDate">Preferred Callback Date</label>
+            <input type="date" id="preferredDate" name="preferredDate">
+        </div>
+
+        <div>
+            <label for="department">Department / Topic *</label>
+            <select id="department" name="department" required>
+                <option value="" disabled selected>-- Select a Department --</option>
+                <option value="support">Customer Support</option>
+                <option value="sales">Sales & Inquiries</option>
+            </select>
+        </div>
+
+        <fieldset>
+            <legend>Preferred Contact Method</legend>
+            <label>
+                <input type="radio" name="contactMethod" value="email" checked> Email
+            </label>
+            <label>
+                <input type="radio" name="contactMethod" value="phone"> Phone Call
+            </label>
+        </fieldset>
+
+        <div>
+            <label for="message">Message / Details *</label>
+            <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+</body>
+</html>
